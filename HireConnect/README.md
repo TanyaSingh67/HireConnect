@@ -2,7 +2,7 @@
   <img src="https://github.com/suryanshsingh07/Job-Portal/blob/main/frontend/myjob/public/logo.png?raw=true" width="100"/>
 </p>
 
-# My Job: The Ultimate Talent Acquisition Ecosystem
+# HireConnect: The Ultimate Talent Acquisition Ecosystem
 
 ## 🌟 Overview
 
