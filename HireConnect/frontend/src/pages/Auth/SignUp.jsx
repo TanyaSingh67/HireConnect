@@ -20,6 +20,8 @@ const SignUp = () => {
       avatar: null
     });
   
+    const [errors, setErrors] = useState({});
+
     const [formState, setFormState]=useState({
       loading: false,
       errors:{},
@@ -78,24 +80,24 @@ const SignUp = () => {
       }
     };
     
-    const validateForm=()=>{
-      const errors ={
-        fullName: !formData.fullName ? "Enter full Name" : "",
-        email: validateEmail(formData.email),
-        password: validatePassword(formData.password),
-        role: !formData.role ? "Please select a role" : "",
-        avatar: "",
-      };
+     const validateForm = () => {
+  const newErrors = {};
 
-      Object.keys(errors).forEach((key)=>{
-        if(!errors[key]) delete errors[key];
-      });
-      setFormState((prev)=>({...prev, errors}));
-      return Object.keys(errors).length === 0;
-    };
+  if (!formData.fullName) newErrors.fullName = "Enter full Name";
+  if (!formData.email) newErrors.email = "Enter email";
+  if (!formData.password) newErrors.password = "Enter password";
+  if (!formData.role) newErrors.role = "Please select a role";
+
+  setFormState((prev) => ({ ...prev, errors: newErrors }));
+  
+  // Agar newErrors khali hai to true return karega
+  return Object.keys(newErrors).length === 0;
+};
+
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
+    console.log("Validation result:", validateForm(), errors);
     if(!validateForm()) return;
     setFormState(prev=>({...prev,loading:true}));
     try{

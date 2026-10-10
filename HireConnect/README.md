@@ -4,24 +4,24 @@
 
 # HireConnect : The Ultimate Talent Acquisition Ecosystem
 
-## 🌟 Overview
+## Overview
 
 **HireConnect** is a high-performance MERN stack application designed to streamline the modern recruitment lifecycle. It offers a dual-persona experience — dedicated dashboards for **Employers** and **Job Seekers** — featuring real-time tracking, secure authentication and a premium UI built with React 19 and Tailwind 4.0.
 
-### 🚩 Why HireConnect?
+### Why HireConnect?
 Traditional recruitment tools are often clunky and fragmented. My Job solves this by providing a unified, responsive ecosystem where talent meets opportunity with zero friction.
 
 ---
 
-## 💎 Key Benefits
+## Key Benefits
 
-### 👔 For Employers
+### For Employers
 *   **Built-in ATS:** A full Applicant Tracking System to manage candidate pipelines efficiently
 *   **Brand Presence:** Customizable company profiles to attract top-tier talent
 *   **Hiring Insights:** Real-time analytics on job engagement and application volume
 *   **Efficient Filtering:** Quickly identify the best candidates through job-specific applicant views
 
-### 🧑‍💻 For Job Seekers
+### For Job Seekers
 *   **Digital Resume:** A professional profile showcasing skills, bio and experience
 *   **Live Status Tracking:** Real-time updates on your applications (Pending, Shortlisted etc.)
 *   **One-Click Apply:** Streamlined flow for applying to multiple roles instantly
@@ -29,26 +29,26 @@ Traditional recruitment tools are often clunky and fragmented. My Job solves thi
 
 ---
 
-## ✨ Features Deep Dive
+## Features Deep Dive
 
-### 🏠 Public Landing Page
+### Public Landing Page
 - **Hero Experience:** Dynamic CTAs for both employers and job seekers
 - **Platform Stats:** Real-time counters for active users, jobs and companies
 - **Responsive Navigation:** Glassmorphic navbar with mobile-optimized menus
 
-### 📊 Employer Suite
+### Employer Suite
 - **Analytics Overview:** Summary cards for active listings and total applicants
 - **Job Management:** Full CRUD operations (Create, Read, Update, Delete) for job posts
 - **Candidate Pipeline:** View detailed seeker profiles and download resumes directly
 
-### 🔍 Job Seeker Experience
+### Job Seeker Experience
 - **Smart Job Feed:** Clean, card-based interface with salary ranges and locations
 - **Profile Management:** Centralized hub for updating personal and professional details
 - **Application History:** A dedicated list of all past applications with status indicators
 
 ---
 
-## 🎯 MVP & Roadmap
+## MVP & Roadmap
 
 ### Current MVP Scope (v1.0)
 - JWT-based Authentication (Role-based)
@@ -65,7 +65,7 @@ Traditional recruitment tools are often clunky and fragmented. My Job solves thi
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend (Client)
 - **Framework:** React 19 (Latest hooks and performance)
@@ -84,7 +84,7 @@ Traditional recruitment tools are often clunky and fragmented. My Job solves thi
 
 ---
 
-## 📂 Architecture & Structure
+## Architecture & Structure
 
 ```text
 Job-Portal/
@@ -107,7 +107,7 @@ Job-Portal/
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 | Method | Endpoint | Access | Description |
 | :--- | :--- | :--- | :--- |

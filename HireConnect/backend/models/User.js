@@ -7,13 +7,15 @@ const userSchema = new mongoose.Schema({
     password:{type:String, required:true},
     role:{type:String, enum:["jobseeker","employer"], required:true},
     avatar:String,
-    resume:String,
+    resume:String,
+
     title: String,
     bio: String,
     skills: String,
     experience: String,
     githubUrl: String,
-    portfolioUrl: String,
+    portfolioUrl: String,
+
     companyName: String,
     companyDescription: String,
     companyLogo: String,
@@ -22,7 +24,12 @@ const userSchema = new mongoose.Schema({
     industry: String,
     teamSize: String,
     website: String,
-},{timestamps: true});
+
+    resetPasswordToken: String,
+    resetPasswordExpires: Date,
+    
+},{timestamps: true});
+
 userSchema.pre("save", async function (next){
     try{
         if(!this.isModified("password")) return;

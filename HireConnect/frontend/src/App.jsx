@@ -21,7 +21,8 @@ import EditProfileDetails from './pages/Employer/EditProfileDetails';
 import JobSeekerProfileView from './pages/Employer/JobSeekerProfileView';
 import EditJobSeekerProfile from './pages/JobSeekers/EditJobSeekerProfile';
 import ProtectedRoutes from './pages/routes/ProtectedRoutes';
-
+import ForgotPassword from './components/ForgotPassword';
+import ResetPassword from './components/ResetPassword';
 
 const App = () => {
   return (
@@ -37,6 +38,9 @@ const App = () => {
             <Route path='/my-applications' element={<MyApplications/>}/>
             <Route path='/profile' element={<UserProfile/>}/>
             <Route path='/company/:companyId' element={<CompanyProfileView/>}/>
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/reset-password/:token" element={<ResetPassword />} />
+            
 
             <Route element={<ProtectedRoutes requiredRole="employer"/>}>
               <Route path='/employer-dashboard' element={<EmployerDashboard/>}/>
