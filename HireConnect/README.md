@@ -4,36 +4,11 @@
 
 # My Job: The Ultimate Talent Acquisition Ecosystem
 
-<div align="center">
-
-[![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://react.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Node.js](https://img.shields.io/badge/Node.js-LTS-6DA55F?style=for-the-badge&logo=node.js)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Latest-47A248?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
-[![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
-
-**A powerful, full-stack platform bridging the gap between ambitious talent and innovative companies with high-end glassmorphic design**
-
-<p>
-    <a href="https://my-job-open.vercel.app">
-      <img src="https://img.shields.io/badge/🚀 Live_Demo_vercel-View_Live-green?style=for-the-badge" />
-    </a>
-      <a href="https://my-job-open.netlify.app">
-      <img src="https://img.shields.io/badge/🚀 Mirror_netlify-View_Live-green?style=for-the-badge" />
-    </a>
-</p>
-
-[Features](#✨-features) • [Tech Stack](#🛠-tech-stack) • [Installation](#⚙️-installation--setup) • [Folder Structure](#📂-architecture--structure) • [API Reference](#🔌-api-reference)
-
-</div>
-
----
-
 ## 🌟 Overview
 
-**My Job** is a high-performance MERN stack application designed to streamline the modern recruitment lifecycle. It offers a dual-persona experience — dedicated dashboards for **Employers** and **Job Seekers** — featuring real-time tracking, secure authentication and a premium UI built with React 19 and Tailwind 4.0.
+**HireConnect** is a high-performance MERN stack application designed to streamline the modern recruitment lifecycle. It offers a dual-persona experience — dedicated dashboards for **Employers** and **Job Seekers** — featuring real-time tracking, secure authentication and a premium UI built with React 19 and Tailwind 4.0.
 
-### 🚩 Why My Job?
+### 🚩 Why HireConnect?
 Traditional recruitment tools are often clunky and fragmented. My Job solves this by providing a unified, responsive ecosystem where talent meets opportunity with zero friction.
 
 ---
@@ -144,42 +119,3 @@ Job-Portal/
 | `GET` | `/api/analytics/overview`| Both | Fetch role-specific stats |
 
 ---
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone and Install
-```bash
-git clone https://github.com/suryanshsingh07/Job-Portal.git
-cd Job-Portal
-```
-
-### 2️⃣ Backend Setup
-```bash
-cd backend
-npm install
-```
-Create `.env` file:
-```env
-PORT=8000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-FRONTEND_URL_VERCEL=your_vercel_url
-```
-Run: `npm run dev`
-
-### 3️⃣ Frontend Setup
-```bash
-cd ../frontend/myjob
-npm install
-```
-Create `.env` file:
-```env
-VITE_API_BASE_URL=http://localhost:8000
-```
-Run: `npm run dev`
-
----
-
-<p align="center">
-  <a href="https://suryanshsingh.vercel.app/" target="_blank" rel="noopener"> Made by Suryansh Singh</a>
-</p>
